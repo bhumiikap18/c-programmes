@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i = 5;
+    int *p;
+    p = &i;
+
+    printf("Value of i = %d\n", i);
+    printf("Address of i = %p\n", &i);
+    printf("Address of i = %p\n", p);
+    printf("Address of p = %p\n", &p);
+    printf("Value of i = %d\n", *p);
+
+    return 0;
+}
