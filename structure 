@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// Define a structure for Student
+struct Student {
+    int rollNumber;
+    char name[50];
+    float percentage;
+};
+
+int main() {
+    struct Student s;
+
+    // Input student details
+    printf("Enter roll number: ");
+    scanf("%d", &s.rollNumber);
+
+    printf("Enter name: ");
+    scanf(" %[^\n]", s.name);  // reads string with spaces
+
+    printf("Enter percentage: ");
+    scanf("%f", &s.percentage);
+
+    // Output student details
+    printf("\n--- Student Details ---\n");
+    printf("Roll Number: %d\n", s.rollNumber);
+    printf("Name       : %s\n", s.name);
+    printf("Percentage : %.2f%%\n", s.percentage);
+
+    return 0;
+}
